@@ -1,6 +1,10 @@
-export interface MovieDto{
+import { AuthorDto } from "./author.model";
+
+export class MovieDto{
     id: number;
     title: string;
     image: string;
-    author: string;
+    duration: string;
+    genre: string;
+    authorDto: AuthorDto;
 }
